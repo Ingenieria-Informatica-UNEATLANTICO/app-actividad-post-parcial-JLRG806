@@ -1,0 +1,22 @@
+@startuml diagramaDeObjetos
+
+object Ruta13 {
+    paradas = 20
+    buses = 15
+}
+
+object Bus13 {
+    pasajeros = 19
+    parada = "Manuel Llanos"
+    siguienteParada = "Alisal 31"
+}
+
+
+object PasajeroCarlos {
+    tipoDePago = "T.U.S"
+}
+
+Ruta13 -- Bus13 : Administra
+Bus13 -- PasajeroCarlos : Contiene
+
+@enduml

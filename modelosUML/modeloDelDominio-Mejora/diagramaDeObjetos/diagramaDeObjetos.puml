@@ -1,0 +1,68 @@
+@startuml diagramaDeObjetos
+
+' Instancias de las clases más importantes
+object CentroControl1 {
+    nombre = "Centro Principal"
+}
+
+object Ruta1 {
+    codigo = "RUTA-101"
+    nombre = "Centro a Norte"
+}
+
+object Parada1 {
+    nombre = "Estación Central"
+    ubicacion = "Av. Principal #10"
+}
+
+object Parada2 {
+    nombre = "Estación Norte"
+    ubicacion = "Calle Norte #45"
+}
+
+object Bus1 {
+    matricula = "ABC-123"
+    capacidad = 50
+    tipo = "Bus Articulado"
+}
+
+object Conductor1 {
+    nombre = "Juan Pérez"
+    licencia = "12345-C"
+}
+
+object Pasajero1 {
+    nombre = "María López"
+    tarjeta = "TARJETA-6789"
+}
+
+object Tarifa1 {
+    precio = 1.50
+    tipo = "Bus"
+}
+
+object Horario1 {
+    horaInicio = "08:00"
+    horaFin = "20:00"
+    frecuencia = "15 minutos"
+}
+
+' Relaciones específicas del sistema
+CentroControl1 -- Tarifa1 : "administra"
+CentroControl1 -- Horario1 : "maneja"
+CentroControl1 -- Ruta1 : "administra"
+
+Ruta1 -- Parada1 : "contiene"
+Ruta1 -- Parada2 : "contiene"
+Ruta1 -- Bus1 : "administra"
+Ruta1 -- Tarifa1 : "tiene"
+
+Bus1 -- Conductor1 : "tiene"
+Bus1 -- Horario1 : "sigue"
+Bus1 -- Parada1 : "llega a"
+Bus1 -- Parada2 : "llega a"
+
+Pasajero1 -- Tarifa1 : "paga"
+Pasajero1 -- Parada1 : "llega a"
+
+@enduml

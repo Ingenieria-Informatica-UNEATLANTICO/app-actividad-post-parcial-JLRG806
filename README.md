@@ -41,7 +41,6 @@ El diagrama de objetos muestra instancias concretas del sistema en un momento da
 Los diagramas de estados modelan los posibles estados en los que pueden encontrarse algunas entidades clave:
 
 - **Pasajero**: Desde el estado de "Esperando" en la parada, pasando por "Abordando", "En Transito" y finalmente "Llegado a Destino".
-- **Incidencia**: Los estados de una incidencia, desde "Reportada", pasando por "En Evaluación", "En Proceso de Solución" y finalmente "Resuelta".
 - **Vehículo**: El ciclo de vida de un vehículo, desde "En Mantenimiento" a "Disponible", "En Ruta" y "Fuera de Servicio".
 
 ## Objetivos del Proyecto
@@ -51,14 +50,10 @@ Los diagramas de estados modelan los posibles estados en los que pueden encontra
 - **Gestión de Incidencias**: Implementar una solución para gestionar las incidencias durante el servicio de transporte.
 - **Simulación de Operaciones**: Modelar los movimientos de los vehículos y la interacción con los pasajeros.
 
-## Estructura del Proyecto
-
-
-
 ### Menú de Archivos en el Repositorio
 
-- [Modelo del Dominio Parcial](images/modeloDelDominio-Parcial/): Contiene los diagramas de clases, objetos y estados que describen el sistema de transporte público hechos a mano, y luego se pasaron a uml
-- [Modelo del Dominio Completo](images/modeloDelDominio-Mejora/): Contiene los diagramas de clases, objetos y estados que describen el sistema de transporte público, estos diagramas se realido una iteracion para mejorar el modelo del dominio.
+- [Modelo del Dominio Parcial](images/modeloDelDominio-Parcial/): Contiene los diagramas de clases, objetos que describen el sistema de transporte público hechos a mano, y luego se pasaron a uml
+- [Modelo del Dominio Mejora](images/modeloDelDominio-Mejora/): Contiene los diagramas de clases, objetos y estados que describen el sistema de transporte público, estos diagramas se realido una iteracion para mejorar el modelo del dominio.
 
 
 

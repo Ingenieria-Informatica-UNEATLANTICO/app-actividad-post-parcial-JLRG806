@@ -1,0 +1,9 @@
+@startuml DiagramaEstadosPasajero
+[*] --> Esperando : Llega a la parada
+
+Esperando --> Abordando : Vehículo llega
+Abordando --> EnTransito : Sube al vehículo
+EnTransito --> LlegadoADestino : Baja en la parada de destino
+
+LlegadoADestino --> [*] : Termina el viaje
+@enduml

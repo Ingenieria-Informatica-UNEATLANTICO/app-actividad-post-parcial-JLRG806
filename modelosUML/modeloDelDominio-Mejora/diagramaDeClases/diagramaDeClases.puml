@@ -1,0 +1,40 @@
+@startuml diagramaDeClases
+
+class CentroControl
+class Tarifa
+class Incidencia
+class Ruta
+class Parada
+class Vehiculo
+class Bus
+class Tren
+class Metro
+class Horario
+class Conductor
+class Pasajero
+
+CentroControl --o Tarifa : Administra
+CentroControl --o Incidencia : Administra
+CentroControl -- Horario : Maneja
+CentroControl --o Ruta : Administra
+
+Ruta --* Parada : Contiene
+Ruta --* Vehiculo : Administra
+Ruta -- Tarifa : Tiene
+
+Vehiculo ---|> Bus
+Vehiculo ---|> Tren
+Vehiculo ---|> Metro
+
+Vehiculo --* Horario : Sigue
+Vehiculo -- Conductor : Tiene
+Vehiculo -- Parada : Llega a
+
+Conductor -- Incidencia : Crea
+
+Pasajero -- Parada : Llega a
+Pasajero -- Incidencia : Crea
+
+Pasajero .. Tarifa : Paga
+
+@enduml

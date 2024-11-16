@@ -1,0 +1,10 @@
+@startuml DiagramaEstadosVehiculo
+[*] --> EnMantenimiento
+
+EnMantenimiento --> Disponible : Reparaciones completadas
+Disponible --> EnRuta : Se asigna a una ruta
+EnRuta --> Disponible : Termina el recorrido
+Disponible --> FueraDeServicio : Incidencia crítica
+EnRuta --> FueraDeServicio : Falla durante operación
+FueraDeServicio --> EnMantenimiento : Ingreso al taller
+@enduml

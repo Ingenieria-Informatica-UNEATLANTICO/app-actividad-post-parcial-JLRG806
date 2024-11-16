@@ -30,30 +30,28 @@ El diagrama de clases representa las entidades principales y sus relaciones:
 
 #### Diagrama de Objetos
 
-El diagrama de objetos muestra instancias concretas del sistema en un momento dado. Este diagrama refleja los objetos que interactúan durante la operación del sistema de transporte:
-
-- **Ruta1**: Una ruta específica que conecta varias paradas y tiene asignado un vehículo.
-- **Bus1**: Un vehículo específico (de tipo Bus) que sigue un horario y es operado por un conductor.
-- **Pasajero1**: Un pasajero que paga una tarifa y viaja en un vehículo de la ruta.
+El diagrama de objetos muestra instancias concretas del sistema en un momento dado. Este diagrama refleja los objetos que interactúan durante la operación del sistema de transporte.
 
 #### Diagrama de Estados
 
 Los diagramas de estados modelan los posibles estados en los que pueden encontrarse algunas entidades clave:
 
-- **Pasajero**: Desde el estado de "Esperando" en la parada, pasando por "Abordando", "En Transito" y finalmente "Llegado a Destino".
+- **Pasajero**: Cambia de estado desde "Esperando" en la parada hasta "Llegado a Destino" después de completar su viaje.
 - **Vehículo**: El ciclo de vida de un vehículo, desde "En Mantenimiento" a "Disponible", "En Ruta" y "Fuera de Servicio".
-
-## Objetivos del Proyecto
-
-- **Modelado del Sistema**: Crear un modelo de clases que represente correctamente los componentes del sistema de transporte.
-- **Simulación de Estados**: Usar diagramas de estados para describir el comportamiento dinámico del sistema.
-- **Gestión de Incidencias**: Implementar una solución para gestionar las incidencias durante el servicio de transporte.
-- **Simulación de Operaciones**: Modelar los movimientos de los vehículos y la interacción con los pasajeros.
 
 ### Menú de Archivos en el Repositorio
 
-- [Modelo del Dominio Parcial](images/modeloDelDominio-Parcial/): Contiene los diagramas de clases, objetos que describen el sistema de transporte público hechos a mano, y luego se pasaron a uml
-- [Modelo del Dominio Mejora](images/modeloDelDominio-Mejora/): Contiene los diagramas de clases, objetos y estados que describen el sistema de transporte público, estos diagramas se realido una iteracion para mejorar el modelo del dominio.
 
+1. **Modelo del dominio (PDF)**:
+   - [Modelo del dominio PDF](images/modeloDelDominioPapel/parcial%20%2014%20%20November%202024.pdf): Documento escaneado con los diagramas de clases, objetos y estados creados a mano durante el parcial.
+
+2. **Trabajo Parcial (Hecho a mano y convertido a UML)**:
+   - [Modelo del Dominio Parcial SVG](images/modeloDelDominio-Parcial/): Contiene los diagramas en formato SVG de clases, objetos y estados realizados a mano y luego convertidos a UML.
+   - [Modelo del Dominio Parcial UML](modelosUML/modeloDelDominio-Parcial/): Contiene los diagramas UML correspondientes a clases, objetos y estados.
+
+
+3. **Mejoras en el Modelo (Iteración posterior)**:
+   - [Modelo del Dominio Mejora SVG](images/modeloDelDominio-Mejora/): Diagramas en formato SVG mejorados después de la iteración.
+   - [Modelo del Dominio Mejora UML](modelosUML/modeloDelDominio-Mejora/): Diagramas UML mejorados después de la iteración.
 
 
